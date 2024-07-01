@@ -2,13 +2,17 @@
     // Type definition
     interface Details{
         source: string,
-        alt: string
+        alt: string,
+        title: string
     }
     export let details: Details;
-    console.log(details)
 
     
 </script>
-<div class="hm_tile w-96 h-96">
-    <img src="{details.source}" alt="{details.alt}">
+<div class="hm_tile w-96 h-48 overflow-hidden m-8 bg-red-200">
+    <span class="hm_tile_title absolute mx-auto my-auto top-1.5 left-1.5 tertiary_txt text-3xl font-extrabold">{details.title}</span>
+    <img height="192px" width="384px" src="{details.source}" alt="{details.alt}">
 </div>
+
+<style>
+</style>

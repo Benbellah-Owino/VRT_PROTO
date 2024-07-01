@@ -22,6 +22,11 @@
         max-width: 50%; 
         justify-content: space-around;
     }
+
+    .mobile_link:hover{
+        background-color: #131313;
+        transition: all ease-in-out 0.3s;
+    }
     a{
         text-decoration: none;
     }
