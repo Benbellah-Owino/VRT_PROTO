@@ -247,7 +247,7 @@ body {
 
 
 /* section:  	HOME */
-.hm_tile{
+.hm_tile, .epst_tile{
 	z-index: 10;
 	position: relative;
 	cursor: pointer;
@@ -255,11 +255,11 @@ body {
 	transition: all ease-in-out 0.3s;
 }
 
-.hm_tile:hover{
+.hm_tile:hover, .epst_tile:hover{
 	box-shadow: #F3EC34 0px 8px 8px 8px;
 }
 
-.hm_tile::after{
+.hm_tile::after, .epst_tile::after{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -272,13 +272,31 @@ body {
 	transition: all ease-in-out 0.3s;
 }
 
-.hm_tile:hover::after{
+.hm_tile:hover::after, .epst_tile:hover::after{
 	background-color: var(--secondary);
 	opacity:0.7
 }
 
 
-.hm_tile_title{
+.hm_tile_title, .epst_tile_title{
 	z-index: 100;
 }
+
+.hm_tile_desc, .epst_tile_desc{
+	display: none;
+	color: var(--primary);
+	font-size: 14px;
+	position: absolute;
+	left: 1rem;
+	z-index: 100;
+	bottom:1rem;
+}
+
+.hm_tile:hover > .hm_tile_desc, 
+.epst_tile:hover > .epst_tile_desc{
+	display:block;
+	transition: all ease-in-out 0.3s;
+}
+
+
 /* endsection:  HOME */
