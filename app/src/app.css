@@ -333,6 +333,33 @@ form{
 }
 
 
+
+form{
+	padding: 0.5rem;
+	border-radius: 12px;
+}
+
+
+.formField{
+	width: 95%;
+	margin-top: 1rem;
+}
+
+
+.formField label{
+	width: 30%;
+	text-align: right;
+	padding-right: 1rem;
+}
+
+
+.formField input{
+	width: 70%;
+	float: right;
+	border-radius: 4px;
+	color: #030303;
+	padding: 4px
+}
 /* endsection:  HOME */
 
 
