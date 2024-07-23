@@ -246,6 +246,40 @@ body {
 }
 
 
+/* section:  	Form */
+form{
+	padding: 0.5rem;
+	width: 90%;
+	max-width:500px;
+}
+
+.form_div{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+
+.form_div label{
+	width: 40%;	
+	text-align: right;
+	padding-right: 8px;
+	font-weight: bold;
+	background: #000;
+}
+.form_div input{
+	width: 60%;
+	float: left;
+	color:#030303;
+	border-radius: 0.25rem;
+	padding: 4px;
+}
+/* endsection:  Form */
+
+
 /* section:  	HOME */
 .hm_tile, .epst_tile{
 	z-index: 10;
@@ -300,3 +334,5 @@ body {
 
 
 /* endsection:  HOME */
+
+
